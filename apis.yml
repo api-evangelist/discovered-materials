@@ -1,8 +1,27 @@
 aid: discovered-materials
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/discovered-materials.png
 name: Discovered Materials
-description: Discovered Materials is a company surfaced as a portfolio company of y-combinator and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Discovered Materials (legally matforge inc) is a Y Combinator-backed (Spring 2026)
+  startup based in San Francisco building AI scientists for the semiconductor industry. The company
+  uses swarms of AI agents to run the full materials-discovery pipeline - generating candidate
+  materials, synthesizing them, and testing them in physical laboratories - to find novel materials
+  for datacenters and fabrication facilities. Their stated goal is to compress a process that
+  traditionally takes 10+ years of lab work into months, targeting 10x-better alternatives for
+  applications such as nanoscale interconnects. Founded by Akash Ramdas (Stanford materials-science
+  PhD/postdoc) and Advaith Sridhar (Carnegie Mellon AI, formerly Luma Labs and Persona AI). At the
+  time of profiling the company exposes no public API, developer portal, or documentation; this
+  entry is an enrichment lead maintained in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/discovered-materials/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +31,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Artificial Intelligence
+- Materials Science
+- Semiconductors
+- Deep Tech
+- Y Combinator
+- AI Agents
+- Research
 apis: []
+common:
+- type: DomainSecurity
+  url: security/discovered-materials-domain-security.yml
+- type: Website
+  url: https://discoveredmaterials.com
+- type: Email
+  url: mailto:founders@discoveredmaterials.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
